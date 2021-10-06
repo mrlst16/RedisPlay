@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31613.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RedisPlay", "RedisPlay\RedisPlay.csproj", "{57F8DD9F-189C-4026-B4A0-E0E471112548}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RedisPlay.Models", "RedisPlay.Models\RedisPlay.Models.csproj", "{42815551-C37C-470B-8FD7-B1F41C3EA983}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RedisPlay.Interfaces", "RedisPlay.Interfaces\RedisPlay.Interfaces.csproj", "{7893C095-09C0-4183-AE51-F7B434F38DD2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RedisPlay.Tests", "RedisPlay.Tests\RedisPlay.Tests.csproj", "{135940D2-2B3D-4169-8C43-237B982287C3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RedisPlay.Lib", "RedisPlay.Lib\RedisPlay.Lib.csproj", "{D4B9DC52-E4AC-4CE9-A598-2AFFEC6605E1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RedisPlay.Tests.Data", "RedisPlay.Tests.Data\RedisPlay.Tests.Data.csproj", "{FD18F207-F958-4CB3-A93A-963B009383A8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{57F8DD9F-189C-4026-B4A0-E0E471112548}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57F8DD9F-189C-4026-B4A0-E0E471112548}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57F8DD9F-189C-4026-B4A0-E0E471112548}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57F8DD9F-189C-4026-B4A0-E0E471112548}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42815551-C37C-470B-8FD7-B1F41C3EA983}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42815551-C37C-470B-8FD7-B1F41C3EA983}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42815551-C37C-470B-8FD7-B1F41C3EA983}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42815551-C37C-470B-8FD7-B1F41C3EA983}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7893C095-09C0-4183-AE51-F7B434F38DD2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7893C095-09C0-4183-AE51-F7B434F38DD2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7893C095-09C0-4183-AE51-F7B434F38DD2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7893C095-09C0-4183-AE51-F7B434F38DD2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{135940D2-2B3D-4169-8C43-237B982287C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{135940D2-2B3D-4169-8C43-237B982287C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{135940D2-2B3D-4169-8C43-237B982287C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{135940D2-2B3D-4169-8C43-237B982287C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D4B9DC52-E4AC-4CE9-A598-2AFFEC6605E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4B9DC52-E4AC-4CE9-A598-2AFFEC6605E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4B9DC52-E4AC-4CE9-A598-2AFFEC6605E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4B9DC52-E4AC-4CE9-A598-2AFFEC6605E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD18F207-F958-4CB3-A93A-963B009383A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD18F207-F958-4CB3-A93A-963B009383A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD18F207-F958-4CB3-A93A-963B009383A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD18F207-F958-4CB3-A93A-963B009383A8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C14A5AE7-291E-4951-B800-174CD1C807FE}
+	EndGlobalSection
+EndGlobal
