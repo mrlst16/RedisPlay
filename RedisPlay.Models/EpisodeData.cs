@@ -11,5 +11,6 @@ namespace RedisPlay.Models
         public string Name { get; set; }
         public string OwnerName { get; set; }
         public DateTime AiredDate { get; set; }
+        public TimeSpan RunningTime { get; set; }
     }
 }
