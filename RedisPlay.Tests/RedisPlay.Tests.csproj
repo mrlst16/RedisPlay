@@ -25,6 +25,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\RedisPlay.Lib\RedisPlay.Lib.csproj" />
     <ProjectReference Include="..\RedisPlay.Tests.Data\RedisPlay.Tests.Data.csproj" />
   </ItemGroup>
 

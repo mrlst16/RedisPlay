@@ -20,7 +20,7 @@ namespace RedisPlay.Tests
         [Fact]
         public async Task Set()
         {
-
+            var dict = 
         }
     }
 }
