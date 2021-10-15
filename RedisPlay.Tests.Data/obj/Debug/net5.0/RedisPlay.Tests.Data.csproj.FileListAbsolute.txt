@@ -1,0 +1,15 @@
+D:\Repos\RedisPlay\RedisPlay.Tests.Data\obj\Debug\net5.0\RedisPlay.Tests.Data.csproj.AssemblyReference.cache
+D:\Repos\RedisPlay\RedisPlay.Tests.Data\obj\Debug\net5.0\RedisPlay.Tests.Data.GeneratedMSBuildEditorConfig.editorconfig
+D:\Repos\RedisPlay\RedisPlay.Tests.Data\obj\Debug\net5.0\RedisPlay.Tests.Data.AssemblyInfoInputs.cache
+D:\Repos\RedisPlay\RedisPlay.Tests.Data\obj\Debug\net5.0\RedisPlay.Tests.Data.AssemblyInfo.cs
+D:\Repos\RedisPlay\RedisPlay.Tests.Data\obj\Debug\net5.0\RedisPlay.Tests.Data.csproj.CoreCompileInputs.cache
+D:\Repos\RedisPlay\RedisPlay.Tests.Data\bin\Debug\net5.0\RedisPlay.Tests.Data.deps.json
+D:\Repos\RedisPlay\RedisPlay.Tests.Data\bin\Debug\net5.0\RedisPlay.Tests.Data.dll
+D:\Repos\RedisPlay\RedisPlay.Tests.Data\bin\Debug\net5.0\ref\RedisPlay.Tests.Data.dll
+D:\Repos\RedisPlay\RedisPlay.Tests.Data\bin\Debug\net5.0\RedisPlay.Tests.Data.pdb
+D:\Repos\RedisPlay\RedisPlay.Tests.Data\obj\Debug\net5.0\RedisPlay.Tests.Data.dll
+D:\Repos\RedisPlay\RedisPlay.Tests.Data\obj\Debug\net5.0\ref\RedisPlay.Tests.Data.dll
+D:\Repos\RedisPlay\RedisPlay.Tests.Data\obj\Debug\net5.0\RedisPlay.Tests.Data.pdb
+D:\Repos\RedisPlay\RedisPlay.Tests.Data\bin\Debug\net5.0\RedisPlay.Models.dll
+D:\Repos\RedisPlay\RedisPlay.Tests.Data\bin\Debug\net5.0\RedisPlay.Models.pdb
+D:\Repos\RedisPlay\RedisPlay.Tests.Data\obj\Debug\net5.0\RedisPlay.Tests.Data.csproj.CopyComplete

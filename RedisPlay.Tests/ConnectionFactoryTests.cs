@@ -1,13 +1,11 @@
 using RedisPlay.Tests.Data;
-using StackExchange.Redis;
-using System;
 using Xunit;
 
 namespace RedisPlay.Tests
 {
-    public class Connecting
+    public class ConnectionFactoryTests
     {
-        public Connecting()
+        public ConnectionFactoryTests()
         {
         }
 

@@ -1,13 +1,10 @@
-﻿using StackExchange.Redis;
-using System;
-
-namespace RedisPlay
+﻿namespace RedisPlay
 {
     class Program
     {
         static void Main(string[] args)
         {
-            
+
 
         }
     }

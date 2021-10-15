@@ -1,9 +1,6 @@
 ﻿using RedisPlay.Models;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace RedisPlay.Tests.Data
 {
@@ -11,7 +8,10 @@ namespace RedisPlay.Tests.Data
     {
         public static IDictionary<string, List<Episode>> CreatorToEpisodes
         {
-            get => new Dictionary<string, List<Episode>>() { };
+            get => new Dictionary<string, List<Episode>>()
+            {
+                { "" , new List<Episode>(){ new Episode() { AiredDate = DateTime.Parse("")} }}
+            };
         }
 
         public static IDictionary<string, List<string>> CreatorToEpisodeKeys

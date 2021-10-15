@@ -1,0 +1,15 @@
+D:\Repos\RedisPlay\RedisPlay.Interfaces\bin\Debug\net5.0\RedisPlay.Interfaces.deps.json
+D:\Repos\RedisPlay\RedisPlay.Interfaces\bin\Debug\net5.0\RedisPlay.Interfaces.dll
+D:\Repos\RedisPlay\RedisPlay.Interfaces\bin\Debug\net5.0\ref\RedisPlay.Interfaces.dll
+D:\Repos\RedisPlay\RedisPlay.Interfaces\bin\Debug\net5.0\RedisPlay.Interfaces.pdb
+D:\Repos\RedisPlay\RedisPlay.Interfaces\obj\Debug\net5.0\RedisPlay.Interfaces.csproj.AssemblyReference.cache
+D:\Repos\RedisPlay\RedisPlay.Interfaces\obj\Debug\net5.0\RedisPlay.Interfaces.GeneratedMSBuildEditorConfig.editorconfig
+D:\Repos\RedisPlay\RedisPlay.Interfaces\obj\Debug\net5.0\RedisPlay.Interfaces.AssemblyInfoInputs.cache
+D:\Repos\RedisPlay\RedisPlay.Interfaces\obj\Debug\net5.0\RedisPlay.Interfaces.AssemblyInfo.cs
+D:\Repos\RedisPlay\RedisPlay.Interfaces\obj\Debug\net5.0\RedisPlay.Interfaces.csproj.CoreCompileInputs.cache
+D:\Repos\RedisPlay\RedisPlay.Interfaces\obj\Debug\net5.0\RedisPlay.Interfaces.dll
+D:\Repos\RedisPlay\RedisPlay.Interfaces\obj\Debug\net5.0\ref\RedisPlay.Interfaces.dll
+D:\Repos\RedisPlay\RedisPlay.Interfaces\obj\Debug\net5.0\RedisPlay.Interfaces.pdb
+D:\Repos\RedisPlay\RedisPlay.Interfaces\bin\Debug\net5.0\RedisPlay.Models.dll
+D:\Repos\RedisPlay\RedisPlay.Interfaces\bin\Debug\net5.0\RedisPlay.Models.pdb
+D:\Repos\RedisPlay\RedisPlay.Interfaces\obj\Debug\net5.0\RedisPlay.Interfaces.csproj.CopyComplete

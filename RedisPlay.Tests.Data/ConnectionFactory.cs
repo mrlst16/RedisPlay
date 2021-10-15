@@ -1,6 +1,5 @@
 ﻿using Microsoft.Extensions.Configuration;
 using StackExchange.Redis;
-using System;
 
 namespace RedisPlay.Tests.Data
 {
