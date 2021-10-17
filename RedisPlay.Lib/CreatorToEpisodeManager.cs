@@ -46,7 +46,7 @@ namespace RedisPlay.Lib
                         var episode = kvp.Value[i];
                         var json = JsonConvert.SerializeObject(episode);
                         HashEntry entry = new HashEntry(episode.Id, json); ;
-                        hashEntries[1] = entry;
+                        hashEntries[i] = entry;
                     }
                     await d.HashSetAsync(keystoreKey, hashEntries);
                 }

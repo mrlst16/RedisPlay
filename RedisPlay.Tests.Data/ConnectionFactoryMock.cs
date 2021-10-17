@@ -3,7 +3,7 @@ using StackExchange.Redis;
 
 namespace RedisPlay.Tests.Data
 {
-    public static class ConnectionFactory
+    public static class ConnectionFactoryMock
     {
 
         private static ConnectionMultiplexer _connection;
@@ -16,7 +16,7 @@ namespace RedisPlay.Tests.Data
         {
             var configuration
                  = new ConfigurationBuilder()
-                     .AddJsonFile("appSettings.json")
+                     .AddJsonFile("D:\\Repos\\RedisPlay\\appSettings.json")
                      .Build();
 
             return new ConfigurationOptions()

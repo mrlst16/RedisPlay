@@ -17,9 +17,7 @@ namespace RedisPlay.Lib
         {
             var multiplexer = await EpisodeManagerBase.GetConnection();
             var database = multiplexer.GetDatabase();
-            var result = await func(database);
-            await multiplexer.CloseAsync();
-            return result;
+            return await func(database);
         }
 
         protected async Task<bool> TryUseRedisDatabaseAsync(Func<IDatabase, Task<bool>> func)

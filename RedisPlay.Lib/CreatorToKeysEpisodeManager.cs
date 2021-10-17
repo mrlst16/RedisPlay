@@ -21,9 +21,7 @@ namespace RedisPlay.Lib
 
         private Episode ConvertToEpisode(HashEntry[] hashEntries)
         {
-            var result = new Episode()
-            {
-            };
+            Episode result = new();
 
             foreach (var entry in hashEntries)
             {
@@ -40,12 +38,14 @@ namespace RedisPlay.Lib
                         result.FilePath = entry.Value;
                         break;
                     case nameof(Episode.Id):
-                        result.Id = int.TryParse(hashEntries.FirstOrDefault(x => x.Name == nameof(Episode.Name)).Value, out int res) ? res : -1;
+                        result.Id = int.TryParse(entry.Value, out int res) ? res : -1;
                         break;
                     case nameof(Episode.Name):
                         result.Name = entry.Value;
                         break;
                     case nameof(Episode.RunningTime):
+                        var ticks2 = ((long)entry.Value);
+                        result.RunningTime = new TimeSpan(ticks2);
                         break;
                     default:
                         break;
@@ -95,12 +95,13 @@ namespace RedisPlay.Lib
                 {
                     var keystoreKey = CreatorKey(creatorId);
                     var keyStoreHash = d.HashGetAll(keystoreKey);
+
                     for (int i = 0; i < keyStoreHash.Length; i++)
                     {
                         var hash = keyStoreHash[i];
                         if (string.Equals(hash.Name, episodeId.ToString(), StringComparison.InvariantCultureIgnoreCase))
                         {
-                            var episodeHash = d.HashGetAll(hash.Name.ToString());
+                            var episodeHash = d.HashGetAll(hash.Value.ToString());
                             return ConvertToEpisode(episodeHash);
                         }
                     }
@@ -114,12 +115,12 @@ namespace RedisPlay.Lib
                 var creatorKey = CreatorKey(creatorId);
                 var keys = d.HashGetAll(creatorKey);
 
-                Parallel.ForEach(keys, (async k =>
+                foreach (var k in keys)
                 {
                     var hash = await d.HashGetAllAsync(k.Value.ToString());
                     var episode = ConvertToEpisode(hash);
                     result.Add(episode);
-                }));
+                }
 
                 return result;
             });

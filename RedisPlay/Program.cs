@@ -1,7 +1,16 @@
-﻿namespace RedisPlay
+﻿using Microsoft.Extensions.Configuration;
+
+namespace RedisPlay
 {
-    class Program
+    public class Program
     {
+        public IConfiguration Configuration
+        {
+            get => new ConfigurationBuilder()
+                     .AddJsonFile("appSettings.json")
+                     .Build();
+        }
+
         static void Main(string[] args)
         {
 

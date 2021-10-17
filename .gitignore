@@ -339,3 +339,4 @@ ASALocalRun/
 # macOS
 .DS_Store
 
+/appSettings.json
