@@ -7,10 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Include="bin\Debug\net5.0\appSettings.json" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.9.4" />
     <PackageReference Include="StackExchange.Redis" Version="2.2.50" />
     <PackageReference Include="xunit" Version="2.4.1" />
@@ -27,6 +23,10 @@
   <ItemGroup>
     <ProjectReference Include="..\RedisPlay.Lib\RedisPlay.Lib.csproj" />
     <ProjectReference Include="..\RedisPlay.Tests.Data\RedisPlay.Tests.Data.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="bin\Debug\net5.0\" />
   </ItemGroup>
 
 </Project>

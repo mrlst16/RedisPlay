@@ -1,12 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Diagnostics;
 using System.IO;
-using System.Linq;
 using System.Reflection;
-using System.Runtime.InteropServices.ComTypes;
-using System.Text;
-using System.Threading.Tasks;
+using Xunit;
 using Xunit.Sdk;
 
 namespace RedisPlay.Tests.Attributes
@@ -15,6 +13,8 @@ namespace RedisPlay.Tests.Attributes
     public abstract class TimerAttributeBase : BeforeAfterTestAttribute
     {
         protected Stopwatch _stopwatch;
+
+        protected static object _lock = new object();
 
         protected TimerAttributeBase()
         {
@@ -29,14 +29,30 @@ namespace RedisPlay.Tests.Attributes
         public override void After(MethodInfo methodUnderTest)
         {
             _stopwatch.Stop();
-
+            Write(methodUnderTest);
         }
 
-        private void Write(MethodInfo methodInfo)
+        protected void Write(MethodInfo methodInfo)
         {
-
+            lock (_lock)
+            {
+                using (StreamWriter writer = new StreamWriter(OutputStream))
+                {
+                    try
+                    {
+                        var line = Append(methodInfo);
+                        writer.WriteLine(line);
+                    }
+                    catch (Exception e)
+                    {
+                        //Fail silently for now
+                    }
+                }
+            }
         }
 
-        protected abstract IStream WriteStream { get; }
+        protected abstract string Append(MethodInfo methodInfo);
+
+        protected abstract Stream OutputStream { get; }
     }
 }

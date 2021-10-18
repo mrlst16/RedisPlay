@@ -8,9 +8,13 @@ using System.Threading.Tasks;
 using Xunit;
 using RedisPlay.Models;
 using RedisPlay.Interfaces;
+using RedisPlay.Tests.Attributes;
+using System.ComponentModel;
 
 namespace RedisPlay.Tests
 {
+    [TheoryName("CreatorToKeysEpisodeManager")]
+    [TheoryName("CreatorToEpisodeManager")]
     public class EpisodeManagerTests
     {
         public static TheoryData<IEpisodeManager> EpisodeManager
@@ -26,6 +30,17 @@ namespace RedisPlay.Tests
 
         [Theory]
         [MemberData(nameof(EpisodeManager), MemberType = typeof(EpisodeManagerTests))]
+        [CsvToFileTimer]
+        public async Task Set_PerformanceTest(IEpisodeManager manager)
+        {
+            var dict = EpisodeMock.CreatorToEpisodes;
+            var setResult = await manager.Set(dict);
+            Assert.True(setResult);
+        }
+
+        [Theory]
+        [MemberData(nameof(EpisodeManager), MemberType = typeof(EpisodeManagerTests))]
+        [CsvToFileTimer]
         public async Task GetById_ResponseProperlyMapped(IEpisodeManager manager)
         {
             var dict = EpisodeMock.CreatorToEpisodes;
@@ -38,6 +53,7 @@ namespace RedisPlay.Tests
 
         [Theory]
         [MemberData(nameof(EpisodeManager), MemberType = typeof(EpisodeManagerTests))]
+        [CsvToFileTimer]
         public async Task GetEpisodesByCreatorId_ResponseProperSize(IEpisodeManager manager)
         {
             var dict = EpisodeMock.CreatorToEpisodes;
@@ -50,6 +66,7 @@ namespace RedisPlay.Tests
 
         [Theory]
         [MemberData(nameof(EpisodeManager), MemberType = typeof(EpisodeManagerTests))]
+        [CsvToFileTimer]
         public async Task GetEpisodesId_ResponseProperlyMapped(IEpisodeManager manager)
         {
             var dict = EpisodeMock.CreatorToEpisodes;
@@ -67,6 +84,7 @@ namespace RedisPlay.Tests
 
         [Theory]
         [MemberData(nameof(EpisodeManager), MemberType = typeof(EpisodeManagerTests))]
+        [CsvToFileTimer]
         public async Task Update_ResponseProperlyMapped(IEpisodeManager manager)
         {
             var dict = EpisodeMock.CreatorToEpisodes;

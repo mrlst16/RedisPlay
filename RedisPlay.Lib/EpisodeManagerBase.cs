@@ -12,7 +12,6 @@ namespace RedisPlay.Lib
     {
         private static ConnectionMultiplexer _connectionMultiplexer;
 
-
         protected async Task<T> UseRedisDatabaseAsync<T>(Func<IDatabase, Task<T>> func)
         {
             var multiplexer = await EpisodeManagerBase.GetConnection();
@@ -41,12 +40,12 @@ namespace RedisPlay.Lib
             {
                 var configuration
                      = new ConfigurationBuilder()
-                         .AddJsonFile("appSettings.json")
+                         .AddJsonFile("C:\\RedisPlay\\appSettings.json")
                          .Build();
 
                 var configurationOptions = new ConfigurationOptions()
                 {
-                    EndPoints = { { configuration.GetConnectionString("redis_cloud"), configuration.GetValue<int>("AppSettings:RedisPort") } },
+                    EndPoints = { { configuration.GetConnectionString("redis"), configuration.GetValue<int>("AppSettings:RedisPort") } },
                     User = configuration.GetValue<string>("Credentials:Redis:User"),
                     Password = configuration.GetValue<string>("Credentials:Redis:Password"),
                 };
